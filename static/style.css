@@ -8,7 +8,7 @@ html, body, #canvas {
 }
 
 #search {
-    height: 30%;
+    height: 20%;
     background-color: #35A055;
     border-bottom: 1pt solid #158025;
     display: flex;
@@ -18,12 +18,12 @@ html, body, #canvas {
 
 #search-form {
     background: none;
-    height: 18px;
+    height: 25px;
     border: none;
     padding: 5px 5px;
     color: white;
     margin: 2% 1% 0% 25%;
-    font-size: 12pt;
+    font-size: 18pt;
     border-bottom: 1pt solid white;
 }
 
