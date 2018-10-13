@@ -1,0 +1,44 @@
+html, body, #canvas {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    height: 100%;
+    width: 100%;
+}
+
+#search {
+    height: 30%;
+    background-color: #35A055;
+    border-bottom: 1pt solid #158025;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#search-form {
+    background: none;
+    height: 18px;
+    border: none;
+    padding: 5px 5px;
+    color: white;
+    margin: 2% 1% 0% 25%;
+    font-size: 12pt;
+    border-bottom: 1pt solid white;
+}
+
+#search-title {
+    margin: 15px 30%;
+    color: white;
+    font-size: 20pt;
+}
+
+#search-icon {
+    width: 35px;
+    height: 35px;
+}
+
+#search-div {
+    display: flex;
+    flex-direction: row;
+}

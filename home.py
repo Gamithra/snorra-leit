@@ -1,0 +1,26 @@
+tpl = '''
+<html>
+
+<head>
+     <meta charset="utf-8">
+     <title>Snorra-leit</title>
+     <link rel="stylesheet" href="static/style.css">
+     <script src="jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+    <div id="search">
+        <div id="search-title">Leita úr Snorra-Eddu </div>
+        <div id="search-div">
+            <input id="search-form" placeholder="Leitarorð"> </input>
+            <img id="search-icon" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png" </img>
+        </div>
+   </div>
+
+</body>
+
+</html>'''
+
+def temp():
+    return tpl
