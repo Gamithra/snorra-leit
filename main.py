@@ -5,7 +5,6 @@ from urllib.parse import quote
 @route('/')
 def index():
     #return template('<b>Helloo {{name}}</b>!', name=name)
-    print("os")
     return template(home.temp(), search_results="", greet=True)
 
 

@@ -10,25 +10,27 @@ tpl = '''
 <body>
 
     <div id="search">
-        <!--div id="search-title">Leita úr Snorra-Eddu </div-->
+        <!--div id="search-title">Leita í Snorra-Eddu </div-->
             <form action="http://localhost:8080/" method="post" accept-charset="ISO-8859-1">
                 <div id="search-div">
-                    <input id="search-form" name="keyword" placeholder="Leita úr Gylfaginningu"> </input>
+                    <input id="search-form" name="keyword" placeholder="Leita í Gylfaginningu"> </input>
                     <input type="image" id="search-icon" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png">
                 </div>
-                <p id="author"> <a href=https://github.com/Gamithra/snorra-leitarv-l>Kóðinn</a>: Gamithra Marga</p>
+                <p id="author"> Kóðinn <a href=https://github.com/Gamithra/snorra-leit>(linkur)</a>: Gamithra Marga</p>
             </form>
     </div>
 
     <div id="container">
         % if greet:
-            Leitarvélin sækir sjálfkrafa allar beygingarmyndir leitarorðsins frá <a>bin.is</a>.
+            Notað er útgáfu Gylfaginningar sem birt er á heimasíðunni <a href="https://www.snerpa.is/net/snorri/gylf.htm">Snerpu</a>.
+            <p>
+            Leitarvélin sækir sjálfkrafa allar beygingarmyndir leitarorðsins frá heimasíðu <a href="http://bin.arnastofnun.is/forsida/">Stofnunar Árna Magnússonar</a>.
         % else:
             <div id="result">
                 % if success:
-                    Leitarorð <i>"{{keyword}}"</i> fannst í eftirfarandi köflum:
+                    Leitarorðið <i>"{{keyword}}"</i> fannst í eftirfarandi köflum:
                 % else:
-                    Leitarorð <i>"{{keyword}}"</i> fannst ekki!
+                    Leitarorðið <i>"{{keyword}}"</i> fannst ekki!
                 % end
             </div>
             % for chapter in search_results:

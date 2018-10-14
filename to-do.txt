@@ -1,15 +1,6 @@
 
-make search results bold
-
-kirjuta avalehele et kasuta seda lehte selleks ja selleks ja kirjuta need
-lehed kust informatsioon on võetud
-
-
 näita vasakul pool täpselt (mis osast), ja näita peatükkide kaupa
 
-
-lõpus:
-vaheta github repo link
 
 after MVP:
 wikipedia integration
