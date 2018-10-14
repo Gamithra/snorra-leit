@@ -33,27 +33,26 @@ def data(keyword):
             line = line.replace('\r', '')
             kaflar[kafli].append(line)
 
-    for i in range(1, len(kaflaheiti)+1):
-        kaflar[i] = ("\n").join(kaflar[i])
+    #for i in range(1, len(kaflaheiti)+1):
+    #    kaflar[i] = ("\n").join(kaflar[i])
 
     #print(("\n").join(kaflar))
 
-    result = ""
+    result = []
 
     for i in range(1, len(kaflaheiti)+1):
-        if keyword in kaflar[i]:
-            result += str(i)
-            result += ". kafli \n \n"
-            result += kaflar[i]
-            result += "\n \n"
-    print(result)
+        if re.search(keyword, "\n".join(kaflar[i]), re.IGNORECASE):
+            result.append(str(i) + ". kafli ")
+            #result += ". kafli "
+            for line in kaflar[i]:
+                result.append(line)
+            #result += "<br>"
 
     if result != "":
         return result
-    else: "Fannst ekki!"
+    else: return "Fannst ekki!"
     #if str(names[i].encode('utf-8')) != "" and "1" not in str(names[i].encode('utf-8')):
 
 
 
-data("Baldur")
 

@@ -1,5 +1,5 @@
 from bottle import route, run, template, get, post, request, static_file, os
-import home
+import home, parser
 
 @route('/')
 def index():
@@ -12,8 +12,7 @@ def index():
 def search():
     word = request.forms.get('keyword')
     #do search
-    print("YO")
-    return template(home.temp(), search_results=word)
+    return template(home.temp(), search_results=parser.data(word))
 
 
 my_module = os.path.abspath(__file__)
