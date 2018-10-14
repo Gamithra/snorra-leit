@@ -1,8 +1,0 @@
-
-näita vasakul pool täpselt (mis osast), ja näita peatükkide kaupa
-
-
-after MVP:
-wikipedia integration
-implementeeri teised snorra-edda osad
-spurning hvort snorra-edda lehel on tasuline asi
