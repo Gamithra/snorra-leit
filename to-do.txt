@@ -7,11 +7,6 @@ kirjuta avalehele et kasuta seda lehte selleks ja selleks ja kirjuta need
 lehed kust informatsioon on võetud
 
 
-
-bín integration
-parse all beygingarmyndir
-pane checkbox et kas sa _tahad_ neid saada
-
 lõpus:
 vaheta github repo link
 

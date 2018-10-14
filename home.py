@@ -11,7 +11,7 @@ tpl = '''
 
     <div id="search">
         <!--div id="search-title">Leita úr Snorra-Eddu </div-->
-            <form action="http://localhost:8080/" method="post">
+            <form action="http://localhost:8080/" method="post" accept-charset="ISO-8859-1">
                 <div id="search-div">
                     <input id="search-form" name="keyword" placeholder="Leita úr Snorra-Eddu"> </input>
                     <input type="image" id="search-icon" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png">
@@ -24,6 +24,11 @@ tpl = '''
         % for pr in search_results:
             <p>{{pr}}</p>
         % end
+
+        % if greet:
+            Leitarvélin sækir sjálfkrafa allar beygingarmyndir leitarorðsins frá <a>bin.is</a>.
+        % end
+
     </div>
 
 </body>

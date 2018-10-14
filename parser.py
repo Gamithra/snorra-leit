@@ -18,10 +18,8 @@ def data(keyword):
         return "Page not found :("
 
     words = beygingarmyndir.data(keyword)
-    print(words)
-
     soup = BeautifulSoup(page, "lxml")
-    #contents = soup.body.find('b.child(div)')
+
     kaflaheiti = [remove_tags(str(x)) for x in soup.body.find_all('b')[1:-1]]
 
     kaflar = [list() for i in range(len(kaflaheiti)+1)]
@@ -37,25 +35,20 @@ def data(keyword):
             line = line.replace('\r', '')
             kaflar[kafli].append(line)
 
-    #for i in range(1, len(kaflaheiti)+1):
-    #    kaflar[i] = ("\n").join(kaflar[i])
-
-    #print(("\n").join(kaflar))
-
     result = []
 
     for i in range(1, len(kaflaheiti)+1):
-        if re.search(keyword, "\n".join(kaflar[i]), re.IGNORECASE):
-            result.append(str(i) + ". kafli ")
-            #result += ". kafli "
-            for line in kaflar[i]:
-                result.append(line)
-            #result += "<br>"
+        for w in words:
+            if re.search(w, "\n".join(kaflar[i]), re.IGNORECASE):
+                result.append(str(i) + ". kafli ")
+                #result += ". kafli "
+                for line in kaflar[i]:
+                    result.append(line)
+                #result += "<br>"
 
     if result != "":
         return result
     else: return "Fannst ekki!"
-    #if str(names[i].encode('utf-8')) != "" and "1" not in str(names[i].encode('utf-8')):
 
 
 

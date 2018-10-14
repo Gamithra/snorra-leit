@@ -24,7 +24,17 @@ def data(keyword):
 
     for i in range(len(myndir)):
         myndir[i] = myndir[i].text
+
     return myndir
+
+'''test code
+
+kw = input()
+print(data(kw))
+
+
+'''
+
 
 
 '''from selenium import webdriver
