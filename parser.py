@@ -2,6 +2,7 @@
 
 import urllib.request
 from bs4 import BeautifulSoup
+import beygingarmyndir
 
 import re
 
@@ -15,6 +16,9 @@ def data(keyword):
         page = urllib.request.urlopen("https://www.snerpa.is/net/snorri/gylf.htm")
     except:
         return "Page not found :("
+
+    words = beygingarmyndir.data(keyword)
+    print(words)
 
     soup = BeautifulSoup(page, "lxml")
     #contents = soup.body.find('b.child(div)')
