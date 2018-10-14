@@ -27,6 +27,12 @@ def data(keyword):
     kaflar = [list() for i in range(len(kaflaheiti)+1)]
     kafli = 0
 
+    while True:
+        dd = soup.find('dl')
+        if not dd:
+            break
+        dd.name = 'p'
+
     for line in soup.body.find_all("p"):
         isChapter = False
         for heiti in kaflaheiti:

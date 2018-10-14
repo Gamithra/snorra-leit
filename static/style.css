@@ -6,6 +6,7 @@ html, body, #canvas {
     height: 100%;
     width: 100%;
     font-size: 10pt;
+    color: #444;
 }
 
 #search {
@@ -20,9 +21,9 @@ html, body, #canvas {
 
 #search-form {
     background: none;
-    height: 20px;
+    height: 30px;
     border: none;
-    padding: 0px 0px;
+    padding: 0px 2px 5px 0px;
     color: white;
     margin: 8% 0% 0% 0%;
     font-size: 15pt;
@@ -43,6 +44,7 @@ html, body, #canvas {
     border-bottom: 1pt solid white;
     display: inline;
     width: 20%;
+    padding: 0px 0px 3px 0px;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
@@ -64,4 +66,17 @@ html, body, #canvas {
 
 #container {
     padding: 4% 8%;
+    text-align: justify;
+}
+
+p {
+    text-align: justify;
+}
+
+b {
+    color: black;
+}
+
+h1 {
+    margin: 45px 0px 0px 0px;
 }
