@@ -1,10 +1,11 @@
 
-set <br> between lines - lõika asjad lõikude järgi, <p> peax ikkagi töötama
-jsonify see asi hoopis
-put <kaflaheiti> tags and style 'em
 make search results bold
+
 kirjuta avalehele et kasuta seda lehte selleks ja selleks ja kirjuta need
 lehed kust informatsioon on võetud
+
+
+näita vasakul pool täpselt (mis osast), ja näita peatükkide kaupa
 
 
 lõpus:

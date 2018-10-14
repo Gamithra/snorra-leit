@@ -13,7 +13,9 @@ def index():
 def search():
     word = request.forms.get('keyword')
     #do search
-    return template(home.temp(), search_results=parser.data(word), greet=False)
+    myndir = parser.word(word)
+    results = parser.data(word)
+    return template(home.temp(), search_results=results, words=myndir, greet=False)
 
 
 my_module = os.path.abspath(__file__)
