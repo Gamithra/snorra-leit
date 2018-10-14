@@ -21,30 +21,40 @@ tpl = '''
     </div>
 
     <div id="container">
-
-        % for chapter in search_results:
-            <h1> {{chapter[0]}} </h1>
-
-            % for paragraph in chapter[1]:
-                <p>
-                % for word in paragraph.split(" "):
-                    % for w in words:
-                        % if w.lower() in word.lower():
-                            <b> {{word}} </b>
-                            % break
-                        % else:
-                            {{word}}
-                            % break
-                        % end
-
-                    % end
-                % end
-                </p>
-            % end
-        % end
-
         % if greet:
             Leitarvélin sækir sjálfkrafa allar beygingarmyndir leitarorðsins frá <a>bin.is</a>.
+        % else:
+            <div id="result">
+                % if success:
+                    Leitarorð <i>"{{keyword}}"</i> fannst í eftirfarandi köflum:
+                % else:
+                    Leitarorð <i>"{{keyword}}"</i> fannst ekki!
+                % end
+            </div>
+            % for chapter in search_results:
+                <h1> {{chapter[0]}} </h1>
+
+                % for paragraph in chapter[1]:
+                    <p>
+                    % for word in paragraph.split(" "):
+                        % found = False
+                        % for w in words:
+                            % if w.lower() in word.lower():
+                                % found = True
+                                <b> {{word}} </b>
+                                % break
+                            % end
+                        % end
+                        % if not found:
+                            % found = False
+                            {{word}}
+
+                        % end
+                    % end
+                    </p>
+                % end
+            % end
+
         % end
 
     </div>

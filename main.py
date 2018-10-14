@@ -15,7 +15,9 @@ def search():
     #do search
     myndir = parser.word(word)
     results = parser.data(word)
-    return template(home.temp(), search_results=results, words=myndir, greet=False)
+    if results == []: success = False
+    else: success = True
+    return template(home.temp(), success=success, search_results=results, words=myndir, greet=False, keyword=word)
 
 
 my_module = os.path.abspath(__file__)

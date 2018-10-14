@@ -80,3 +80,7 @@ b {
 h1 {
     margin: 45px 0px 0px 0px;
 }
+
+#result {
+    font-size: 14pt;
+}

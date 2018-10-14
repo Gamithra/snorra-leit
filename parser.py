@@ -57,10 +57,7 @@ def data(keyword):
                 result.append(rs)
                 break
 
-    if result != "":
-        return result
-    else: return "Fannst ekki!"
-
+    return result
 
 
 #kw = input()
