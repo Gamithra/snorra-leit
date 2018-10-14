@@ -7,9 +7,9 @@ To run the site:\
 `cd snorra-leit`\
 `sudo pip3 install -r requirements.txt`\
 `python3 main.py`\
-Navigate to http://localhost:8080/\
+Navigate to http://localhost:8080/
 
-
+\
 
 Video:\
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=i7b3nU3byu4
