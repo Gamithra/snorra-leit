@@ -11,7 +11,7 @@ tpl = '''
 
     <div id="search">
         <!--div id="search-title">Leita í Snorra-Eddu </div-->
-            <form action="http://localhost:8080/" method="post" accept-charset="ISO-8859-1">
+            <form action="https://snorra-leit.herokuapp.com/" method="post" accept-charset="ISO-8859-1">
                 <div id="search-div">
                     <input id="search-form" name="keyword" placeholder="Leita í Gylfaginningu"> </input>
                     <input type="image" id="search-icon" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png">

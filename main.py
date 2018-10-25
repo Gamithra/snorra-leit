@@ -4,14 +4,12 @@ from urllib.parse import quote
 
 @route('/')
 def index():
-    #return template('<b>Helloo {{name}}</b>!', name=name)
     return template(home.temp(), search_results="", greet=True)
 
 
 @route('/', method="POST")
 def search():
     word = request.forms.get('keyword')
-    #do search
     myndir = parser.word(word)
     results = parser.data(word)
     if results == []: success = False

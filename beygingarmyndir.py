@@ -27,28 +27,3 @@ def data(keyword):
 
     return myndir
 
-'''test code
-
-kw = input()
-print(data(kw))
-
-
-'''
-
-
-
-'''from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.select import Select
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.firefox.options import Options'''
-'''
-using selenium:
-
-options = Options()
-options.headless = True
-
-driver = webdriver.Firefox(firefox_options=options)
-driver.get(link)
-page = driver.page_source
-driver.quit()'''
