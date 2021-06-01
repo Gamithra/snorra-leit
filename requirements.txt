@@ -3,4 +3,4 @@ bottle==0.12.13
 bs4==0.0.1
 lxml==4.2.5
 selenium==3.14.1
-urllib3==1.23
+urllib3==1.26.5
